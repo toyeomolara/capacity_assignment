@@ -1,146 +1,94 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="second assignment">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="omolara Toye">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            table{
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
-            td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-            }
-            tr:nth-child(even) {
-             background-color: #CDE990;
-            }
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index file</title>
+    <style>
+        body{
+            justify-content:center;      
+        }
+        h1{
+            text-align: center;
+            color: rgb(129, 218, 230);
+        }
+        form{
+            background-color: powderblue;
+            width: 50%;
+            margin: 0 auto;
+             padding: 15px;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        input{
+            width: 60%;
+        }
+ 
+    .container{
+        padding: 50px;
+        margin: 50px;
+        position: relative;
+        border: 5px solid  powderblue;
+        font-family: Arial, sans-serif;
+    }
+    .container p{
+        line-height: 80px;
+    }
+      
+    </style>
+</head>
     <body>
-        <container>
-            <section>
-               <a href="https://youtube.com/"> <img src="tools/docs/sample/nature_3.jpg" width="98%" height="450px"></a>
-            </section>
-            <section>
-                <table>
-                    <tr>
-                        <th>S/N</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                        <th>Age</th>
-                        <th>Gender</th>
-                        <th>Country</th>
-                    </tr>
-                   
+        <h3>WELCOME TO MY WEB PAGE</h3>
+        <a href="others/about.html"> Take me to About us Page</a><br>
+        <a href="others/blog.html">Blog page</a><br>
+        <a href="others/contact.html">Contact us page</a><br>
+        
+        <div class="container">
+            <h1>Contact Us page</h1>
+            <form action="contact.html" method="post">
+                <label  for="firstname">Name:</label>
+                <input type="text" id="firstname" name="firstname"><br><br>
+                <label for="lastname">Last name:</label>
+                <input type="text" id="lastname" name="lastname"><br><br>
+                <label>Email</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label>Password</label>
+                <input type="password" id="password" required><br><br>
+                <label>Gender</label> 
+            
+                <select id="Gender" name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                <option value="others">Others</option>
                     
-                    <tr>
-                        <td>1</td>
-                        <td>Omolara</td>
-                        <td>toyeomolara@gmail.com</td>
-                        <td>blahblah</td>
-                        <td>34</td>
-                        <td>Female</td>
-                        <td>Nigerian</td>
-                    </tr>
-                   <tr>
-                        <td>2</td>
-                        <td>Bolatito</td>
-                        <td>tito@gmail.com</td>
-                        <td>ad4$57683</td>
-                        <td>23</td>
-                        <td>Male</td>
-                        <td>Nigerian</td>
-                   </tr>
-                   <tr>
-                        <td>3</td>
-                        <td>Jeremiah</td>
-                        <td>jerry@gmail.com</td>
-                        <td>y768trfd</td>
-                        <td>28</td>
-                        <td>Male</td>
-                        <td>Nigerian</td>
-                  </tr>
-                  <tr>
-                        <td>4</td>
-                        <td>Chidinma</td>
-                        <td>chi@yahoo.com</td>
-                        <td>rgtyh764jf</td>
-                        <td>18</td>
-                        <td>Female</td>
-                        <td>Nigerian</td>
-                  </tr>
-                  <tr>
-                        <td>5</td>
-                        <td>diekoloreoluwa</td>
-                        <td>deiko@hotmail.com</td>
-                        <td>oiy6rfet</td>
-                        <td>20</td>
-                        <td>Male</td>
-                        <td>Nigerian</td>
-                 </tr>
-
-                 <tr>
-                        <td>6</td>
-                        <td>Jasper</td>
-                        <td>jasper@gmail.com</td>
-                        <td>jyhdt54eo</td>
-                        <td>23</td>
-                        <td>Male</td>
-                        <td>Algerian</td>
-                 </tr>
-                 
-                 <tr>
-                    <td>7</td>
-                    <td>Mensah</td>
-                    <td>mensah@yahoo.com</td>
-                    <td>tuaw7y@uy</td>
-                    <td>19</td>
-                    <td>Male</td>
-                    <td>Ghanian</td>
-                 </tr>
-
-                 <tr>
-                    <td>8</td>
-                    <td>Evelyn</td>
-                    <td>lyn@gmail.com</td>
-                    <td>lgtf5463</td>
-                    <td>17</td>
-                    <td>Female</td>
-                    <td>Togolese</td>
-                 </tr>
-                 
-                 <tr>
-                    <td>9</td>
-                    <td>Bezaleel</td>
-                    <td>bezal@yahoo.com</td>
-                    <td>titobiloluaw</td>
-                    <td>16</td>
-                    <td>Male</td>
-                    <td>Italian</td>
-                 </tr>
-                 
-                 <tr>
-                    <td>10</td>
-                    <td>Aminat</td>
-                    <td>mimat@gmail.com</td>
-                    <td>oti7yur@f</td>
-                    <td>16</td>
-                    <td>Female</td>
-                    <td>Nigerian</td>
-                 </tr>
-
-
-
-                </table>
-            </section>
-        </container>
+                </select><br><br>
+                <label for="food">Favourite Foods</label> 
+            
+                    <select id="food" name="food" size="5" multiple>
+                    <option value="Beans">Beans</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Spaghetti">Spaghetti</option>
+                    <option value="Soup">Soup</option>
+                    <option value="Pizza">Pizza</option>
+                    </select>
+                    <br><br>
+                <label>Certificate</label>
+                <select>
+                    <option value="FSLC">FSLC</option>
+                    <option value="O'Level">O'Level</option>
+                    <option value="Bsc">Bsc</option>
+                </select>   
+                <br><br>
+            
+                <label>Phone number</label>
+                <input type="number" id="number">
+                <br><br>
+            
+                <textarea name="message" style="width:500px; height:300px;"> Tell us about yourself</textarea><br><br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
 
     </body>
 </html>
